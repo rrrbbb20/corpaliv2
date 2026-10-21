@@ -73,6 +73,6 @@ fun PerfilScreen(usuario: Usuario?, onCambiarFoto: (String) -> Unit) {
         }, modifier = Modifier.fillMaxWidth()) { Text("Tomar foto con cámara") }
         OutlinedButton(onClick = { galeria.launch("image/*") },
             modifier = Modifier.fillMaxWidth()) { Text("Elegir foto de galería") }
-        Text("La imagen se conserva en el almacenamiento privado de la aplicación. No se sube a internet.")
+
     }
 }

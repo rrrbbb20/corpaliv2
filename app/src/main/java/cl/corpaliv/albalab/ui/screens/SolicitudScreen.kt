@@ -82,12 +82,12 @@ fun SolicitudScreen(errores: Map<String, String>, cargando: Boolean,
         }
         Row(verticalAlignment = Alignment.CenterVertically) {
             Checkbox(checked = datos.acepta, onCheckedChange = { editar(datos.copy(acepta = it)) })
-            Text("Acepto almacenar esta solicitud localmente.")
+            Text("Acepto terminos y condiciones.")
         }
         TextoError(errores["acepta"])
         Button(onClick = { onGuardar(datos) }, enabled = !cargando, modifier = Modifier.fillMaxWidth()) {
             if (cargando) CircularProgressIndicator() else Text("Guardar solicitud")
         }
-        Text("IMPORTANTE: no es un envío a CORPALIV. Para contactarles realmente, visita su sitio oficial.")
+
     }
 }

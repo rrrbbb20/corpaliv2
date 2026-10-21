@@ -28,7 +28,6 @@ fun InicioScreen(nombre: String?, onExplorar: () -> Unit,
                 Text("Crear cuenta de persona o empresa")
             }
         }
-        Tarjeta("Aviso académico",
-            "Esta aplicación es un prototipo educativo. Las solicitudes se guardan SOLO en el dispositivo y NO llegan a CORPALIV.")
+
     }
 }
