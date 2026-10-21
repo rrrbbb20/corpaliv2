@@ -1,0 +1,44 @@
+# ==========================================
+# CORPALIV - Android Studio
+# ==========================================
+
+# Configuraciones locales de Android Studio
+.idea/
+.gradle/
+local.properties
+*.iml
+
+# Compilaciones de Gradle
+**/build/
+
+# Compilaciones nativas (C/C++)
+.cxx/
+.externalNativeBuild/
+
+# Archivos APK y Android App Bundle
+*.apk
+*.aab
+
+# Archivos sensibles y claves de firma
+*.jks
+*.keystore
+*.p12
+*.pem
+.env
+.env.*
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Capturas de herramientas de Android
+captures/
+
+# Archivos de configuración local de Kotlin
+.kotlin/
