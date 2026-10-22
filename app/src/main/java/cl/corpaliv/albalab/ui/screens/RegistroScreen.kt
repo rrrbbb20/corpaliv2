@@ -57,7 +57,7 @@ fun RegistroScreen(errores: Map<String, String>, cargando: Boolean,
             singleLine = true, modifier = Modifier.fillMaxWidth())
         Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
             Checkbox(checked = datos.acepta, onCheckedChange = { editar(datos.copy(acepta = it)) })
-            Text("Acepto guardar mi cuenta de demostración localmente en este teléfono.")
+            Text("Acepto terminos y condiciones.")
         }
         TextoError(errores["acepta"])
         Button(onClick = { onRegistrar(datos) }, enabled = !cargando,
